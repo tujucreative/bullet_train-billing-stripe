@@ -441,7 +441,7 @@ GEM
       rubocop-performance (~> 1.26.0)
     standardrb (1.0.1)
       standard
-    stripe (20.1.0)
+    stripe (19.6.3)
       bigdecimal
       logger
     thor (1.5.0)
@@ -482,6 +482,7 @@ DEPENDENCIES
   sprockets-rails
   sqlite3
   standardrb (~> 1.0)
+  stripe (~> 19.1)
 
 BUNDLED WITH
   4.0.20

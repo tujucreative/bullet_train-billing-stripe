@@ -16,6 +16,9 @@ gem "active_hash"
 
 gem "minitest-mock"
 
+# Match the starter host's Stripe major; 20.x is untested.
+gem "stripe", "~> 19.1"
+
 gem "standardrb", "~> 1.0"
 
 git "https://github.com/tujucreative/bullet_train-core.git", branch: "main" do
