@@ -11,6 +11,18 @@ gem "sprockets-rails"
 # Start debugger with binding.b [https://github.com/ruby/debug]
 # gem "debug", ">= 1.0.0"
 
+# Not a direct dependency of this repo; the starter provides it.
+gem "active_hash"
+
+gem "minitest-mock"
+
 gem "standardrb", "~> 1.0"
 
-gem "bullet_train-billing", github: "bullet-train-pro/bullet_train-billing"
+git "https://github.com/tujucreative/bullet_train-core.git", branch: "main" do
+  gem "bullet_train"
+  gem "bullet_train-api"
+  gem "bullet_train-incoming_webhooks"
+  gem "bullet_train-integrations-stripe"
+end
+
+gem "bullet_train-billing", github: "tujucreative/bullet_train-billing", branch: "main"

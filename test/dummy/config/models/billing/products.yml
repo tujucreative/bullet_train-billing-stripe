@@ -1,0 +1,5 @@
+free:
+  limits:
+    memberships:
+      count: 1
+      enforcement: hard
